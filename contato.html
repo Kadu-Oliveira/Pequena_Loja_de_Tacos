@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="autor" content="Kadu Oliveira" />
+    <meta
+      name="descrição"
+      content="Formulário de Contato da Pequena Loja de Tacos."
+    />
+    <link rel="stylesheet" href="./src/css/style.css" type="text/css" />
+    <link rel="icon" href="./src/favicon.ico" type="image/x-icon" />
+    <title>Contatos da Loja de Tacos</title>
+  </head>
+  <body>
+    <header id="topo">
+      <h1>Contate-nos</h1>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Página Inicial</a></li>
+          <li><a href="./index.html#sobreaplt">Sobre a PLT</a></li>
+          <li><a href="./index.html#nossomenu">Nosso Menu</a></li>
+          <li><a href="./horarios.html">Horários de Funcionamento</a></li>
+        </ul>
+      </nav>
+
+      <figure>
+        <img
+          src="./src/img/tacos_close_up_400x260.png"
+          alt="Pequena Loja de Tacos"
+        />
+        <figcaption>Pequena Loja de Tacos</figcaption>
+      </figure>
+    </header>
+
+    <main>
+      <section>
+        <h2>Nosso Formulário de Contato</h2>
+
+        <form action="https://httpbin.org/get" method="get">
+          <fieldset>
+            <legend>Envie-nos uma Mensagem</legend>
+            <p>
+              <label for="nome">Nome:</label>
+              <input
+                type="text"
+                name="nome"
+                id="nome"
+                placeholder="seu nome"
+                request
+                autocomplete=""
+              />
+            </p>
+            <p>
+              <label for="email">Email:</label>
+              <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="seu email"
+                autocomplete=""
+              />
+            </p>
+            <p>
+              <label for="mensagem">Sua Mensagem:</label>
+              <br />
+              <textarea
+                name="mensagem"
+                id="mensagem"
+                cols="30"
+                rows="10"
+                placeholder="Escreva sua mensagem aqui"
+                required
+              ></textarea>
+            </p>
+          </fieldset>
+          <button type="submit">Enviar</button>
+          <button type="reset">Redefinir</button>
+        </form>
+      </section>
+
+      <section>
+        <address>
+          <h2>Nosso Endereço</h2>
+          <p>Avenida dos Tacos, 555-A</p>
+          <p>Cidade das Massas, CE</p>
+          <p>
+            Telefone para Contato: <a href="tel:85987654321">(85)9.8765-4321</a>
+          </p>
+        </address>
+      </section>
+    </main>
+
+    <a href="#topo">Retornar ao Topo da Página</a>
+
+    <hr />
+
+    <footer>
+      <p>Copyright &copy; A Pequena Loja de Tacos</p>
+    </footer>
+  </body>
+</html>
